@@ -16,6 +16,8 @@ authors:
 
 ## Introduction
 
+This HEP (HDF5 Enhancement Proposal) owes its existence to Steven Varga's release of his [IEX2H5 tool](https://github.com/vargaconsulting/iex2h5), and the HDF5 layout he adopted in this tool.
+
 ## HDF5 Profile
 
 ### Root-level datasets
@@ -55,7 +57,8 @@ The RTS matrices are organized with time slots as rows and instruments as column
 
 ## References
 
-1. Reuters Financial Glossary, Second Edition, Addison-Wesley Longman Ltd, 2003.
-2. Romesh Vaitilingam, FT Guide to Using the Financial Pages, Sixth Edition, FT Publishing International, 2010.
-3. Larry Harris, Trading and Exchanges: Market Microstructure for Practitioners, Oxford University Press, 2002.
-4. Gary Stevenson, The Trading Game: A Confession, Crown Currency, 2024.
+1. IEX2H5: IEX TOPS Dataset to HDF5 Converter, https://github.com/vargaconsulting/iex2h5
+2. Reuters Financial Glossary, Second Edition, Addison-Wesley Longman Ltd, 2003.
+3. Romesh Vaitilingam, FT Guide to Using the Financial Pages, Sixth Edition, FT Publishing International, 2010.
+4. Larry Harris, Trading and Exchanges: Market Microstructure for Practitioners, Oxford University Press, 2002.
+5. Gary Stevenson, The Trading Game: A Confession, Crown Currency, 2024.
