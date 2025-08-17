@@ -16,7 +16,7 @@ authors:
 
 ## Introduction
 
-This HEP (HDF5 Enhancement Proposal) owes its existence to Steven Varga's release of his [IEX2H5 tool](https://github.com/vargaconsulting/iex2h5), and the HDF5 layout he adopted in this tool.
+This HEP (HDF5 Enhancement Proposal) owes its existence to Steven Varga's release of his [IEX2H5 tool](https://github.com/vargaconsulting/iex2h5), and the HDF5 profile he adopted for this tool.
 
 ## HDF5 Profile
 
