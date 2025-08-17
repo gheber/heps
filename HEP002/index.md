@@ -28,16 +28,17 @@ This HEP (HDF5 Enhancement Proposal) owes its existence to Steven Varga's releas
 
 ### IRTS (Irregular Time Series) datasets
 
-- `/irts/YYYY-MM-DD` - Raw tick data for each trading day, stored as `iex::tick_t` structures containing:
-  - `time` (nanoseconds)
-  - `price` (`float`)
+- `/irts/YYYY-MM-DD` - Raw tick data for each trading day is stored as a compound datatype with the following fields:
+  - `time` (`uint64` [nanoseconds])
+  - `price` (`float32`)
   - `size` (`uint32`)
-  - `contract_id` (instrument identifier)
-  - `flags` (bid/trade/ask indicators)
+  - `contract_id` (`uint16` [instrument identifier])
+  - `flags` (`uint16` [bid/trade/ask indicators])
 
 ### RTS (Regular Time Series) datasets
 
-The RTS matrices are organized with time slots as rows and instruments as columns, using compression and chunking for efficient storage.
+The RTS matrices are organized with instruments as rows and time slots as columns, using compression and chunking for efficient storage.
+The IEX2H5 tool uses 1 minute as the default time interval. On a typical trading day, there are 6 hours and 30 minutes, or 390 minutes, i.e., 390 columns.    
 
 - `/rts/ask/YYYY-MM-DD` - Ask prices at regular intervals
 - `/rts/bid/YYYY-MM-DD` - Bid prices at regular intervals
